@@ -22,3 +22,21 @@ WHERE steals > 150
 SELECT name
 FROM players
 WHERE age > 30 AND pts > 1700
+
+
+-- AND --
+
+SELECT *
+FROM players
+WHERE age < 26 AND height > 200
+
+SELECT *
+FROM game_scores
+WHERE steals < 1 AND Assists < 2
+
+
+-- OR --
+
+SELECT *
+FROM players
+WHERE height > 200 OR weight > 100
