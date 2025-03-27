@@ -1,0 +1,50 @@
+What are relational databases
+
+Tables
+–
+In a relational database, data is organized into tables. Each table consists of rows and columns. Each row represents a record and each column represents an attribute or variable of that record. Data stored in this format is known as structured data.
+
+Think of a table like a spreadsheet, where each row represents a specific item or record, and each column contains a different attribute or piece of information about that item. 
+
+
+Rows
+–
+Rows in a table represent individual records. For example, in a database for a bookstore, each row in the "Books" table might represent a specific book with details like title, author, and publication date.
+
+
+Columns
+–
+Columns represent the attributes or fields or properties of the records. In our bookstore example, the columns in the "Books" table could include fields such as  "Title," "Author," "Publication Date," and "Price."
+
+
+Relationships
+–
+One of the defining features of relational databases is the ability to establish relationships between tables. This allows you to connect data in different tables. We will look at this in detail in this course.
+
+
+Keys
+–
+To establish relationships, relational databases often use keys. 
+
+A primary key uniquely identifies each row within a table, while a foreign key in one table references the primary key in another table, creating a relationship between them.
+
+
+Relational databases are typically managed and queried using SQL (Structured Query Language), a special language designed for working with structured data. 
+
+
+
+How relational databases work
+
+In relational databases, data is separated into multiple tables that store information in rows and columns.  
+
+Three tables in a hypothetical company's relational database: Sales table, Products table, and the Stores table.
+
+Separating the data into these tables is an efficient method of storage that saves both on storage capacity and processing power.
+
+To understand this, let’s think about the sales table in this example. The sales table would be fed various point-of-sales systems. In other words, every time a sale is made, a new row of data about that sale would be updated in the sales table.
+
+The stores' table, however, would have a single row per store. Let's say the company has 50 stores - there would be 50 rows of data. The store information held in this table (such as the store's address, phone number, manager etc.) would rarely need to be updated. This reduces duplication of store information.
+
+If all purchase information, that is both the sales AND store information, were stored together in the same table, this would introduce duplicated store information across the sales. In turn, this duplicated information would cost an enormous amount of storage space. 
+
+Separating the product and storing information into separate tables removes the duplication of data and improves storage efficiency, while still allowing the information to be accessed when required.

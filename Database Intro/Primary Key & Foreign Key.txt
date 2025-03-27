@@ -1,0 +1,18 @@
+Primary & Foreign keys
+
+
+Primary Key
+
+The primary key's main job is to ensure that each row in a table is unique. It serves as a unique identifier for every record within that table.  A table can have only one primary key.
+
+By enforcing uniqueness, the primary key column has a unique value in each row, and does not store duplicate or conflicting records or values (data integrity). A primary key can never take NULL values.
+
+Primary Key helps in locating and retrieving individual records quickly and efficiently.  
+
+Foreign Key
+
+Foreign key, on the other hand, is a field or collection of fields in a table that refers to the Primary key of the other table. It is responsible for managing the relationship between the tables. 
+
+In other words, it allows you to connect data in one table to related data in another table so that data from both can be put to use parallelly.  It ensures the data in the related tables stays consistent and valid (data consistency). It is not possible to have a foreign key in one table that doesn't match a primary key in another table.
+
+Foreign keys help you retrieve data from related tables. You can use them to join tables and gather information from multiple tables at once.
