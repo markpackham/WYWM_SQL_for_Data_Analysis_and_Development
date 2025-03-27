@@ -1,0 +1,15 @@
+SQL Clauses
+
+SQL clauses are condition-based. These clauses allow you to specify conditions that filter, sort, or manipulate data in your relational database, based on specific criteria. By combining and using these clauses effectively, you can build powerful SQL queries to extract the information you need from your database. 
+
+You have already seen the syntax and use of SELECT, FROM and WHERE clauses in the previous lessons. Let us now leverage these known clauses to build our knowledge on some of the most popular and important SQL clauses.
+
+In this module, we will focus on the following SQL clauses:
+
+GROUP BY
+HAVING
+HAVING vs WHERE
+ORDER BY
+LIMIT
+
+Most of the SQL clauses, as they are condition-based and filter or retrieve data based on some specific criteria, they are always placed after the SELECT and FROM clauses. 

@@ -77,4 +77,75 @@ SELECT *
 FROM customers
 WHERE Segment NOT LIKE "%Consumer%"
 
-SELECT * FROM products WHERE productID NOT LIKE "OFF%"
+SELECT *
+FROM products
+WHERE productID NOT LIKE "OFF%"
+
+-- COUNT --
+
+SELECT COUNT (CustomerID)
+FROM customers
+WHERE Segment LIKE "%Consumer%"
+
+SELECT COUNT (OrderID)
+FROM sales
+WHERE Profit > 1000
+
+-- SUM --
+-- SUM function adds up all the values specified by the expression. This would commonly be used when we need to find a ‘total’, such as total profit or revenue. 
+-- You can use an expression with your SUM function eg the SUM of the (quantity multiplied by 150)
+
+SELECT
+    SUM(Sales) AS TotalSales,
+    SUM(Profit) AS TotalProfit
+FROM sales
+
+SELECT SUM (Quantity)
+FROM sales
+
+-- MIN --
+SELECT MIN(steals)
+FROM game_scores
+
+
+-- MAX --
+SELECT MAX(steals)
+FROM game_scores
+
+
+-- RANGE --
+-- Just MAX - MIN
+SELECT
+    MIN(Sales) AS LowestSale,
+    MAX(Sales) AS HighestSale,
+    (MAX(Sales) - MIN(Sales)) AS SalesRange
+FROM sales
+
+SELECT MAX(Profit) - MIN(Profit) AS Profit_Range
+FROM sales
+
+
+-- AVG
+-- The AVG function is used to find the average (mean) of numerical values within a specified column. 
+-- Note: NULL values are ignored.
+
+SELECT AVG(Discount) as AverageDiscount
+FROM sales
+
+SELECT AVG(discount) AS AverageDiscount
+FROM sales
+WHERE OrderDate = "22/11/2015"
+
+SELECT AVG(FLD_GLS_made)
+FROM game_scores
+
+SELECT AVG(PTS)
+FROM players
+WHERE age < 25
+
+
+-- ROUND --
+-- ROUND  function is used to round a numeric value to a specified number of decimal places.
+
+SELECT ROUND(Discount, 1)
+FROM sales
