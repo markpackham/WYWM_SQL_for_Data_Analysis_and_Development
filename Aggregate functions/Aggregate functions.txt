@@ -1,0 +1,12 @@
+Types of Aggregate Functions
+
+The most commonly used types of aggregate function are:
+
+SUM – calculates the sum of values specified by the expression.
+COUNT – counts the number of rows in the specified table.
+AVG – calculates the average of the values in the expression.
+With the exception of COUNT, aggregate functions will ignore null values. The others will not take nulls into account in the calculation.
+
+If, for example, we wish to find the average of a column with 20 rows of numerical data, of which 5 have null values, the average will be calculated on the 15 other values and will disregard the nulls. 
+
+But if we were to perform a COUNT on those rows, SQL would return ’20’.
