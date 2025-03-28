@@ -1,0 +1,53 @@
+Joins
+
+In simple terms,  a JOIN operation in SQL is used to combine data from two or more tables, and to retrieve information from these in a single query,  based on a common or related column between them. The related column is typically referred to as "foreign key".
+
+Before we jump into joins, it is worthwhile to revise what Primary and Foreign Keys are. As we have already seen:
+
+
+Primary Key
+–
+A primary key is a column in a table that uniquely identifies each row in that table. It is often used as the basis for joining tables. 
+
+
+Foreign Key
+–
+A foreign key is a column in one table that is related to the primary key of another table. It establishes a link between the two tables, allowing you to use JOIN to connect them. 
+
+
+Purpose of a Join operation in SQL
+
+By combining data from multiple tables based on related column or columns, the JOIN operation serves several purposes:
+
+Data retrieval
+JOINs allow you to retrieve data from multiple tables in a single query. Without JOINs, you would have to query each table separately and then manually combine the results, which can be inefficient and error-prone. 
+
+Data Consolidation
+When information is distributed across different tables in a database, JOINs help consolidate this data into a unified result set. This is particularly useful for generating reports, analytics, or presenting data in a more meaningful way.
+
+Relationships
+JOINs help you establish and maintain relationships between tables in a relational database. By using primary and foreign keys, you can connect related data, ensuring data integrity and consistency.
+
+Complex Queries
+Complex business logic often requires data from multiple sources. JOINs enable you to create complex queries that involve filtering, sorting, aggregating, and calculating data across multiple tables
+
+In short, a JOIN in SQL is used to bring together related data from different tables, making it possible to perform comprehensive data analysis, reporting, and manipulation within a relational database system.
+
+
+
+Let’s take a quick look at the syntax:
+
+SELECT column1, column2, ...
+FROM table1
+JOIN table2
+ON table1.column_name = table2.column_name
+In all cases, the left table is the table specified in the SELECT-FROM statement. In our example, table1 is the left table.
+
+The right table is the table specified in the JOIN clause. In our example, table2 is the right table.
+
+Another way to put this is that the left table comes first.
+
+What is the purpose of the ON Condition in a JOIN? 
+
+Front of card
+To merge two or more tables into one.
